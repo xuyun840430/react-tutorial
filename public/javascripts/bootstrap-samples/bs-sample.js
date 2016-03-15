@@ -52,3 +52,24 @@ const AlertDismissable = React.createClass({
 });
 
 ReactDOM.render(<AlertDismissable />, document.getElementById('bootstrap-container'));
+
+//var App = React.createClass({
+//  render: function() {
+//    return (
+//      <form className="form-inline" role="form">
+//        <div className="form-group">
+//          <label className="sr-only">Field 1</label>
+//          <input className="form-control" placeholder="Field 1" />
+//        </div>&nbsp;
+//        <div className="form-group">
+//          <label className="sr-only">Field 2</label>
+//          <input className="form-control" placeholder="Field 2" />
+//        </div>&nbsp;
+//        <button type="submit" className="btn btn-primary">Apply</button>&nbsp;
+//        <button type="button" className="btn">Reset</button>
+//      </form>
+//    );
+//  }
+//});
+//
+//ReactDOM.render(<App />, document.getElementById('bootstrap-container'));
