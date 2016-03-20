@@ -11,8 +11,6 @@
  * 时通过ID 来查找。把应用的state 想像成数据库。
  */
 
-
-
 import {combineReducers} from 'redux'
 import {ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters} from './actions'
 const {SHOW_ALL} = VisibilityFilters;
@@ -35,9 +33,9 @@ const {SHOW_ALL} = VisibilityFilters;
 function visibilityFilter(state = SHOW_ALL, action) {
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
-      return action.filter;
+      return action.filter
     default:
-      return state;
+      return state
   }
 }
 
@@ -65,7 +63,7 @@ function todos(state = [], action) {
     case ADD_TODO:
       return [...state, {
         text: action.text,
-        completed: false
+        completed: false // Only add to state data
         }];
 
     /*
@@ -75,7 +73,7 @@ function todos(state = [], action) {
       return [
         ...state.slice(0, action.index),
         Object.assign({}, state[action.index], {
-          completed: true
+          completed: true // Set completed flag
         }),
         ...state.slice(action.index + 1)
       ];

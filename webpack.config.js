@@ -43,7 +43,7 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: [
-    './redux-samples/index.js',
+    './redux-samples/index.js'
   ],
   output: {
     path: path.join(__dirname, '/public/javascripts/'),

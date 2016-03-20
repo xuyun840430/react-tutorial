@@ -5,10 +5,10 @@
  * Create Redux Store
  *
  * Store 就是把 Action 和 Reducer 联系到一起的对象。Store 有以下职责：
- • 维持应用的 state；
- • 提供 getState() 方法获取state；
- • 提供 dispatch(action) 方法更新 state；
- • 通过 subscribe(listener) 注册监听器。
+     • 维持应用的 state；
+     • 提供 getState() 方法获取state；
+     • 提供 dispatch(action) 方法更新 state；
+     • 通过 subscribe(listener) 注册监听器。
  * 再次强调一下Redux 应用只有一个单一的store。当需要拆分处理数据的逻辑时，使用reducer 组合而不是创建多个store。
  */
 import { createStore, applyMiddleware, compose } from 'redux'
